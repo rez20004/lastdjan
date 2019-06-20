@@ -10,7 +10,15 @@
 </head>
 <body>
 
-  <h2> This is a test </h2>
+<form class="" action="{url 'index'}" method=""post>
+
+    {% csrf_token %}
+    {{ myregistrationform.as_p }}
+    <input type="submit" value="Register">
+
+
+
+</form>
 
 
 </body>
